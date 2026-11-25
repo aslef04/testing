@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<style>
+img{
+        width:1000px;
+        height:460px;
+    }
+</style>
+
+<body>
+    <h1>Welcome Page</h1>
+    <img src="{% static 'img/a1.avif' %}" alt=""> <br/>
+    <br/>
+    <br/>
+<a href="{% url 'about' %}">go to about page</a>  <br/>
+
+</body>
+</html>
+{% endblock %}
